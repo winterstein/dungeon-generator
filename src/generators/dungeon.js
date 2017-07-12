@@ -78,7 +78,6 @@ export default class Dungeon extends Generator {
             }
 
             if (i++ === 100) {
-                console.log('failed to connect 100 times :(', room, exit, g_add_to_room);
                 return false;
             }
         }
@@ -193,8 +192,9 @@ export default class Dungeon extends Generator {
         this.add_piece(room, this.options.rooms.initial && this.options.rooms.initial.position ? this.options.rooms.initial.position :  this.get_center_pos());
 
         let k;
+        let finished = 50;
 
-        while (no_corridors || no_rooms) {
+        while ((no_corridors || no_rooms) && !--finished) {
             k = this.random.int(1, no_rooms + no_corridors);
             if (k <= no_corridors) {
                 let corridor = this.new_corridor();
@@ -222,5 +222,7 @@ export default class Dungeon extends Generator {
         if (this.initial_room) {
             this.start_pos = this.initial_room.global_pos(this.initial_room.get_center_pos());
         }
+
+        return !!finished;
     }
 }
