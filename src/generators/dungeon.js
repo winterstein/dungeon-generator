@@ -194,7 +194,7 @@ export default class Dungeon extends Generator {
         let k;
         let okay = 50;
 
-        while ((no_corridors || no_rooms) && !--okay) {
+        while ((no_corridors || no_rooms) && --okay) {
             k = this.random.int(1, no_rooms + no_corridors);
             if (k <= no_corridors) {
                 let corridor = this.new_corridor();
