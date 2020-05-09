@@ -32,9 +32,10 @@ yarn add 2d-dungeon --save
 @TODO
 
 ```javascript
-import Dungeon from 'dungeon-generator';
+import Dungeon from '2d-dungeon';
 
 let dungeon = new Dungeon({
+    max_iterations: 50,
     size: [100, 100], 
     seed: 'abcd', //omit for generated seed
     rooms: {
