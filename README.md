@@ -2,7 +2,13 @@
 
 This is a procedural dungeon generator written in javascript.  
 
-[Live demo](http://domasx2.github.io/dungeon-generator/)
+[Live demo](https://domasx2.github.io/dungeon-generator/)
+
+## Installation
+
+```
+yarn add 2d-dungeon --save
+```
 
 ## Features
 
@@ -16,10 +22,10 @@ This is a procedural dungeon generator written in javascript.
 
 ## Output examples
 
-![Sample 1](http://domasx2.github.io/dungeon-generator/samples/sample1.png)
-![Sample 2](http://domasx2.github.io/dungeon-generator/samples/sample2.png)
-![Sample 3](http://domasx2.github.io/dungeon-generator/samples/sample3.png)
-![Sample 4](http://domasx2.github.io/dungeon-generator/samples/sample4.png)
+![Sample 1](https://domasx2.github.io/dungeon-generator/samples/sample1.png)
+![Sample 2](https://domasx2.github.io/dungeon-generator/samples/sample2.png)
+![Sample 3](https://domasx2.github.io/dungeon-generator/samples/sample3.png)
+![Sample 4](https://domasx2.github.io/dungeon-generator/samples/sample4.png)
 
 ## Usage
 
