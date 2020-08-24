@@ -1,8 +1,8 @@
 # Dungeon generator
 
-This is a procedural dungeon generator written in javascript.  
+This is a procedural dungeon generator written in javascript. 
 
-[Live demo](https://domasx2.github.io/dungeon-generator/)
+This is a fork of https://www.npmjs.com/package/dungeon-generator
 
 ## Installation
 
